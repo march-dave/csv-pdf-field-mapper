@@ -27,13 +27,26 @@ export default function Home() {
   };
 
   return (
-    <main style={{ padding: 20 }}>
+    <main>
       <h1>CSV to PDF</h1>
       <input type="file" accept=".csv" onChange={handleFileChange} />
+
       {csvData.length > 0 && (
-        <button onClick={handleDownloadPdf} style={{ marginLeft: 10 }}>
-          Download PDF
-        </button>
+        <>
+          <button onClick={handleDownloadPdf}>Download PDF</button>
+
+          <table>
+            <tbody>
+              {csvData.map((row, rowIndex) => (
+                <tr key={rowIndex}>
+                  {row.map((cell, cellIndex) => (
+                    <td key={cellIndex}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
       )}
     </main>
   );
