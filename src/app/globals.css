@@ -46,3 +46,126 @@ td, th {
 th {
   background-color: #f2f2f2;
 }
+
+.csvpdf-main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.csvpdf-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 48px 32px 32px 32px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.csvpdf-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.csvpdf-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.csvpdf-desc {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.csvpdf-upload-area {
+  width: 100%;
+  min-height: 120px;
+  background: #f1f5f9;
+  border: 2px dashed #a5b4fc;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: background 0.2s, border 0.2s;
+}
+.csvpdf-upload-area:hover {
+  background: #e0e7ff;
+  border-color: #6366f1;
+}
+.csvpdf-upload-text {
+  text-align: center;
+  color: #6366f1;
+  font-size: 1.1rem;
+}
+.csvpdf-upload-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.csvpdf-filename {
+  color: #334155;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.csvpdf-btn {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  transition: background 0.2s;
+}
+.csvpdf-btn:hover {
+  background: linear-gradient(90deg, #4338ca 0%, #2563eb 100%);
+}
+
+.csvpdf-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 8px;
+}
+.csvpdf-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.98rem;
+}
+.csvpdf-table td, .csvpdf-table th {
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  text-align: left;
+}
+.csvpdf-table tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.csvpdf-footer {
+  margin-top: 40px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  text-align: center;
+}
