@@ -20,4 +20,4 @@ This project is a minimal Next.js application that allows you to upload a CSV fi
    ```
 3. Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-Upload a CSV file and click **Download PDF** to save the contents.
+Upload a CSV file to preview its contents and click **Download PDF** to save them.
